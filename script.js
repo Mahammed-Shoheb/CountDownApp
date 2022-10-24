@@ -2,15 +2,14 @@ const eventForm = document.getElementById("eventForm");
 
 
 
-const initialEvets = {
-  "Shukrana": "June 10, 2023 19:00:00",
-  "Nikha" : "June 11, 2023 01:30:00",
-  "Valima" : "June 12, 2023 02:00:00" 
-}
-const Events = [];
+
 
 addEventListener("DOMContentLoaded", () => {
-  
+  const initialEvets = {
+    "Shukrana": "June 10, 2023 19:00:00",
+    "Nikha" : "June 11, 2023 01:30:00",
+    "Valima" : "June 12, 2023 02:00:00" 
+  }
   for ( const item in initialEvets) {
     const EvtNode = document.createElement("div");
     EvtNode.classList.add("event")
@@ -60,7 +59,6 @@ addEventListener("DOMContentLoaded", () => {
         }, 1000);
       }
     }
-    console.log(eventsCollection)
     eventsCollection.display();
   }
   
@@ -116,9 +114,7 @@ eventForm.addEventListener("submit" , (e) => {
       }, 1000);
     }
   }
-  console.log(eventsCollection)
   eventsCollection.display();
-  Events.push(eventsCollection);
 })
 
 document.querySelector(".hideFormm").addEventListener("click", ()=> {
