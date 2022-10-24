@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>CountDown</title>
+</head>
+<body>
+  <header>
+    <h1>Wedding Event Count Down</h1>
+    <h2>Mahammed Shoheb <span class="heart"></span> Hayath Lubna S</h2>
+  </header>
+  <main>
+    <section class="timerCountDownEvents">
+      
+    </section>
+    <form id="eventForm" action="" class="hidden">
+      <div class="formInputLabelCon">
+        <label for="eventName">Event Name:</label>
+        <input type="text" name="eventName" id="eventName" required>
+      </div>
+      <div class="formInputLabelCon">
+        <label for="dateTimeInput">Event Date and Time:</label>
+        <input type="datetime-local" name="endDate" id="dateTimeInput" value="" required>
+      </div>
+      <button class="submitButton" type="submit">ADD</button>
+    </form>
+    <p class="hideFormm">***********************************</p>
+  </main>
+</body>
+</html>
+
