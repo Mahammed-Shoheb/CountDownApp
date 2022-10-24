@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <h1>Wedding Event Count Down</h1>
+    <h1>Our Wedding Event Count Down</h1>
     <div>
       <h2>Mahammed Shoheb </h2>
       <span class="heart"></span>
@@ -21,7 +21,7 @@
     <section class="timerCountDownEvents">
       
     </section>
-    <form id="eventForm" action="" class="hidden">
+    <form id="eventForm" action="" class="">
       <div class="formInputLabelCon">
         <label for="eventName">Event Name:</label>
         <input type="text" name="eventName" id="eventName" required>
@@ -30,9 +30,17 @@
         <label for="dateTimeInput">Event Date and Time:</label>
         <input type="datetime-local" name="endDate" id="dateTimeInput" value="" required>
       </div>
-      <button class="submitButton" type="submit">ADD</button>
+      <button class="submitButton" type="submit">ADD Event</button>
     </form>
-    <p class="hideFormm">***********************************</p>
+    <form id="removeEventForm">
+      <div class="formInputLabelCon">
+        <label for="eventNameRemove">Event name to be removed:</label>
+        <input type="text" name="eventNameRemove" id="eventNameRemove" required>
+      </div>
+      <button class="submitButton" type="submit">Remove Event</button>
+    </form>
+    <!-- <button class="btn">Add an event</button>
+    <button class="btn">Remove an Event</button> -->
   </main>
 </body>
 </html>

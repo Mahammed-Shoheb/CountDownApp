@@ -8,8 +8,9 @@ html, *::before, *::after {
 
 body {
   border: none;
-  margin: none;
+  margin: auto;
   background-color: aqua;
+  max-width: 720px;
 }
 
 header {
@@ -74,7 +75,7 @@ header {
 .event {
   background-color: chartreuse;
   text-align: center;
-  width: 70vw;
+  width: 80%;
   margin: 1rem auto;
   padding: 0.3rem;
 }
@@ -114,6 +115,24 @@ header {
   font-weight: bold;
 }
 
+/* .btn {
+  border-radius: 1.5rem;
+  background: red;
+  color: white;
+  padding: 0.5rem;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.btn:hover {
+  border-color:cornflowerblue ;
+  background: white;
+  color: red;
+  box-shadow: 0.3rem 0.3rem 0.5rem 0.3rem red;
+} */
+
 @keyframes pulse {
   0% {transform: scale(1) rotate(-45deg);}
   50% {transform: scale(1.3) rotate(-45deg);}
@@ -123,9 +142,9 @@ header {
 
 /* ID styles */
 
-#eventForm  {
-  width: 60vw;
-  margin: 1rem auto;
+#eventForm, #removeEventForm  {
+  width: 60%;
+  margin: 5rem auto;
   line-height: 1.5;
 }
 .formInputLabelCon {
