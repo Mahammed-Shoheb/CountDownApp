@@ -490,11 +490,12 @@ h4 {
   row-gap: 1rem;
   display: grid;
   margin: 0 auto;
+  max-width: var(--fixed-width);
+  width: var(--fluid-width);
+  overflow: hidden;
 }
 
 .event {
-  width: var(--fluid-width);
-  max-width: var(--fixed-width);
   background: var(--primary-100);
   text-align: center;
   padding: 0.5rem 0.75rem;
