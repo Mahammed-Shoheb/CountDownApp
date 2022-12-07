@@ -487,15 +487,14 @@ h4 {
 }
 
 .timerCountDownEvents {
-  padding: 1rem 0.75rem;
   row-gap: 1rem;
   display: grid;
-  width: var(--fluid-width);
-  max-width: var(--fixed-width);
   margin: 0 auto;
 }
 
 .event {
+  width: var(--fluid-width);
+  max-width: var(--fixed-width);
   background: var(--primary-100);
   text-align: center;
   padding: 0.5rem 0.75rem;
@@ -510,7 +509,6 @@ h4 {
 }
 
 .eventTimeContainer {
-  width: 90%;
   margin: 1rem auto;
   display: -webkit-box;
   display: flex;
