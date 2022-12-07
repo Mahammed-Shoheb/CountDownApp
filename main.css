@@ -492,13 +492,12 @@ h4 {
   margin: 0 auto;
   max-width: var(--fixed-width);
   width: var(--fluid-width);
-  overflow: hidden;
 }
 
 .event {
   background: var(--primary-100);
   text-align: center;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.25rem;
   box-shadow: var(--shadow-2);
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -537,14 +536,14 @@ h4 {
 
 .eventTimeContent {
   margin: 0;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.5rem;
   border-radius: var(--borderRadius);
   border: 1px solid var(--primary-100);
 }
 
 .eventTimetext {
   margin: 0;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.5rem;
   border-radius: var(--borderRadius);
   border: 1px solid var(--primary-100);
 }
