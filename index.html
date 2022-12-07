@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
-  <title>CountDown</title>
-</head>
-<body>
-  <header>
-    <h1>Our Wedding Event Count Down</h1>
-    <div>
-      <h2>Mahammed Shoheb </h2>
-      <span class="heart"></span>
-      <h2>Hayath Lubna S</h2>
-    </div>
-  </header>
-  <main>
-    <section class="timerCountDownEvents">
-      
-    </section>
-    <form id="eventForm" action="" class="">
-      <div class="formInputLabelCon">
-        <label for="eventName">Event Name:</label>
-        <input type="text" name="eventName" id="eventName" required>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assests/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./script.js" defer></script>
+    <title>CountDown</title>
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <h1 class="title">
+          <span class="name">Wedding</span> ceremony countdown
+        </h1>
+        <div class="title-underline"></div>
       </div>
-      <div class="formInputLabelCon">
-        <label for="dateTimeInput">Event Date and Time:</label>
-        <input type="datetime-local" name="endDate" id="dateTimeInput" value="" required>
+      <div class="img-container">
+        <img src="./assests/undraw_inlove_b9ay.svg" alt="" class="img" />
       </div>
-      <button class="submitButton" type="submit">ADD Event</button>
-    </form>
-    <form id="removeEventForm">
-      <div class="formInputLabelCon">
-        <label for="eventNameRemove">Event name to be removed:</label>
-        <input type="text" name="eventNameRemove" id="eventNameRemove" required>
+      <div class="container display-flex">
+        <h4>Mahammed <span class="name">Shoheb</span></h4>
+        <span class="heart"></span>
+        <h4>Hayath <span class="name">Lubna</span> S</h4>
       </div>
-      <button class="submitButton" type="submit">Remove Event</button>
-    </form>
-    <!-- <button class="btn">Add an event</button>
+    </header>
+    <main class="container">
+      <section class="timerCountDownEvents"></section>
+      <form id="eventForm" action="" class="form">
+        <h3>add event</h3>
+        <div class="form-row">
+          <label for="eventName" class="form-label">Event Name:</label>
+          <input
+            type="text"
+            name="eventName"
+            id="eventName"
+            class="form-input"
+            required
+          />
+        </div>
+        <div class="form-row">
+          <label for="dateTimeInput" class="form-label"
+            >Event Date and Time:</label
+          >
+          <input
+            type="datetime-local"
+            name="endDate"
+            id="dateTimeInput"
+            class="form-input"
+            value=""
+            required
+          />
+        </div>
+        <button class="btn btn-block" type="submit">ADD Event</button>
+      </form>
+      <form id="removeEventForm" class="form">
+        <div class="form-row">
+          <label for="eventNameRemove" class="form-label"
+            >Event name to be removed:</label
+          >
+          <input
+            type="text"
+            name="eventNameRemove"
+            id="eventNameRemove"
+            class="form-input"
+            required
+          />
+        </div>
+        <button class="btn btn-block" type="submit">Remove Event</button>
+      </form>
+      <!-- <button class="btn">Add an event</button>
     <button class="btn">Remove an Event</button> -->
-  </main>
-</body>
+    </main>
+  </body>
 </html>
-
